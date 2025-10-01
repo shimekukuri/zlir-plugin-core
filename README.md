@@ -1,0 +1,1 @@
+# zlir-plugin-core
