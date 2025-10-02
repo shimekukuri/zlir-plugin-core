@@ -33,8 +33,8 @@
     // internet connectivity.
     .dependencies = .{
         .vii = .{
-            .url = "git+https://github.com/shimekukuri/vii#aa178708d358cf609d61cf55a9945ed945e17466",
-            .hash = "vii-0.0.1-prTW2C8eAAA76tlxXctGsYMmy5NpJ5GV_3q_HO49c1Su",
+            .url = "git+https://github.com/shimekukuri/vii#9d64e52588a1d87d587b8fa397e681849a691fc0",
+            .hash = "vii-0.0.1-prTW2EMjAABjT038fctcqTNE7a6hmjI2HV55gpUI4bA2",
         },
     },
     .paths = .{
