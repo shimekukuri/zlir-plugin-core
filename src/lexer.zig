@@ -4,6 +4,9 @@ const vii = @import("vii");
 const vectorAlignedSlice = vii.conversions.VectorAlignedSlice;
 
 pub const TokenType = enum { IDENTIFIER, KEYWORD, LITERAL_INT, LITERAL_FLOAT, LITERAL_STRING, LITERAL_CHAR, OPERATOR, SEPARATOR, COMMENT, WHITESPACE, EOF, ERROR };
+pub const TokenTypeArr = x: {
+    break :x 0;
+};
 
 pub const Token = struct {
     TokenType: TokenType,
@@ -27,5 +30,7 @@ pub fn createTokenizerType(comptime _run: fn (vectorAlignedSlice(u8), *usize) To
         pub fn run(self: *@This()) Token {
             return _run(self.fileSlice, &self.position);
         }
+
+        fn scan() void {}
     };
 }
